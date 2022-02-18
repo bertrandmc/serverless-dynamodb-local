@@ -40,6 +40,10 @@ class ServerlessDynamodbLocal {
                         lifecycleEvents: ["startHandler"],
                         usage: "Starts local DynamoDB",
                         options: {
+                            host: {
+                                usage: "The default host is localhost",
+                                type: "string"
+                            },
                             port: {
                                 shortcut: "p",
                                 usage: "The port number that DynamoDB will use to communicate with your application. If you do not specify this option, the default port is 8000",
